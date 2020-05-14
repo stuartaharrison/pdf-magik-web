@@ -1,0 +1,280 @@
+﻿html.has-navbar-fixed-top, 
+body.has-navbar-fixed-top {
+    /*padding-top: 6rem !important;*/
+}
+
+nav.navbar,
+div.navbar {
+    /*height: 5rem !important;*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+}
+
+/* Colours */
+.primary-colour {
+    color: rgb(255, 89, 117) !important;
+}
+
+/* Dropzone */
+section.dropzone-header {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+section.dropzone-header .header-icon {
+    color: rgb(255, 89, 117);
+    margin-right: 10px;
+}
+
+section.dropzone {
+    color: #ffffff;
+    background-color: rgb(255, 89, 117);
+    min-height: 300px;
+    padding: 12px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+section.dropzone .dropzone-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px dashed rgba(0, 0, 0, 0.15);
+}
+
+section.dropzone .dropzone-container:hover {
+    cursor: pointer;
+}
+
+section.dropzone button.dropzone-button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-width: 250px;
+}
+
+/* PDF Modify Box */
+section.pdf-modify {
+    min-height: 300px;
+    border: 2px solid #ededed;
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+section.pdf-modify .pdf-process {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pdf-modify .pdf-info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ededed;
+}
+
+section.pdf-modify .pdf-encrypt {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+}
+
+section.pdf-modify .pdf-encrypt button.encrypt-confirm {
+    color: #ffffff;
+    background-color: rgb(255, 89, 117);
+}
+
+/* PDF Completed Box */
+section.pdf-completed {
+    min-height: 300px;
+    border: 2px solid #ededed;
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+section.pdf-completed .pdf-completed-icon {
+    color: rgb(43, 217, 130);
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pdf-completed .pdf-completed-info {
+    color: #ffffff;
+    background-color: rgb(43, 217, 130);
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pdf-completed .pdf-completed-button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-width: 250px;
+}
+
+/* PDF Error Box */
+section.pdf-error {
+    min-height: 300px;
+    border: 2px solid #ededed;
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+section.pdf-error .pdf-error-icon {
+    color: rgb(255, 89, 117);
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pdf-error .pdf-error-info {
+    color: #ffffff;
+    background-color: rgb(255, 89, 117);
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pdf-error .pdf-error-button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-width: 250px;
+}
+
+/* Loader */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
