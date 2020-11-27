@@ -102,6 +102,12 @@ section.pdf-modify .pdf-encrypt button.encrypt-confirm {
     background-color: rgb(255, 89, 117);
 }
 
+section.pdf-modify .pdf-encrypt p.pdf-encrypt-back {
+  color: #4a4a4a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* PDF Completed Box */
 section.pdf-completed {
     min-height: 300px;

@@ -1,5 +1,12 @@
 ﻿export default (state, action) => {
     switch (action.type) {
+        case 'POST_FILE_CLEAR':
+            return {
+                ...state,
+                loading: false,
+                error: null,
+                result: null
+            };
         case 'POST_FILE_REQUEST':
             return {
                 ...state,

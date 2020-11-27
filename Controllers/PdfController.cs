@@ -18,7 +18,7 @@ namespace PdfMagikWeb.Controllers {
         private readonly IPdfConverter _converter;
 
         [HttpPost]
-        [Route("encrypt")]
+        [Route("modify")]
         public IActionResult Encrypt([FromBody] PdfEncryptionOptionsDto options) {
             try {
                 string[] split = options.Base64Data.Split(',');

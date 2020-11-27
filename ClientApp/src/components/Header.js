@@ -1,9 +1,9 @@
-﻿import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+﻿import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 
-export const Header = () => {
+const Header = () => {
     return (
         <header>
             <div className="navbar is-white is-fixed-top" role="navigation" aria-label="main navigation">
@@ -14,5 +14,7 @@ export const Header = () => {
                 </div>
             </div>
         </header>
-    )
+    );
 }
+
+export default Header;

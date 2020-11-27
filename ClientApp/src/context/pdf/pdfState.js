@@ -13,7 +13,14 @@ export const PdfContext = createContext(initialState);
 export const PdfProvider = ({ children }) => {
     const [state, dispatch] = useReducer(pdfReducer, initialState);
 
-    async function encrypt(dto) {
+    async function clearResult() {
+        dispatch({
+            type: 'POST_FILE_CLEAR',
+            payload: null
+        });
+    }
+
+    async function modify(dto) {
         try {
             dispatch({
                 type: 'POST_FILE_REQUEST',
@@ -21,7 +28,7 @@ export const PdfProvider = ({ children }) => {
             });
 
             axios({
-                url: '/pdf/encrypt',
+                url: '/pdf/modify',
                 method: 'POST',
                 data: dto,
                 responseType: 'blob'
@@ -54,7 +61,8 @@ export const PdfProvider = ({ children }) => {
             result: state.result,
             loading: state.loading,
             error: state.error,
-            encrypt
+            clearResult,
+            modify
         }}>
             {children}
         </PdfContext.Provider>
